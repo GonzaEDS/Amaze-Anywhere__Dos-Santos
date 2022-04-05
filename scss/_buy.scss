@@ -1,0 +1,55 @@
+
+.summary-card-section {
+    overflow: hidden;
+}
+
+.summary-card {
+    gap: 1em;
+    width: 90%;
+    padding: 1em;
+    background-color: #fffffffd;
+    filter: drop-shadow(0px 1px 1px black);
+}
+
+.summary-text {
+    h2 {
+        font-size: map-get($map: $font-size_slowGrowth, $key: '3');
+        color: #2f2f2f;
+    }
+}
+    
+
+.buy-forms-section {
+    button {
+        background: #151515;
+        width: calc(3.9rem + 0.9vw);
+        &:hover {
+            background-color: rgb(0, 0, 0);
+        }
+    }
+    input:not([type="checkbox"]) {
+        border: 1px solid lightgray;
+        font-size: map-get($map: $font-size_slowGrowth, $key: '7');
+        font-family: helvetica;
+        height: calc(2.3rem + 0.5vw);
+    
+    }
+} 
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.18rem rgb(232, 233, 233);
+}
+
+fieldset label, .col-form-label {
+    font-size: map-get($map: $font-size_slowGrowth, $key: '7');
+} 
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.18rem rgb(232, 233, 233);
+}
+.form-check-input:focus {
+    border-color: #7f7f7f;
+
+    box-shadow: 0 0 0 0.1rem rgb(190, 190, 190);
+}

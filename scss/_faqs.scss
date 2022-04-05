@@ -1,0 +1,142 @@
+/* faqs section */
+
+.faqs {
+    grid-area: faqs;
+    border-top: 2em solid #2a023447;
+    background: linear-gradient(45deg, #31758f, #23434fc7), linear-gradient(45deg, #256c8747, #2e5f7042);
+    .question-divider {
+        @include flex(center, center);
+        gap: 1em;
+    }
+    .fa-question-circle {
+        color: #cadeef;
+    }
+    .rule {
+        border-bottom: 2px solid #8eafcb;
+        width: 50%;
+    }
+    .fa-chevron-up {
+        color: white;
+        font-weight: 100;
+        vertical-align: baseline;
+    }
+    h2 {
+        font-family: $sansSerifFont;
+        color: white;
+        font-size: map-get($map: $font-size_mediumGrowth, $key: '8');
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: 500;
+        margin-bottom: 0;
+        text-align: initial;
+    }
+    p {
+        color: #ffffffe6;
+        line-height: 1.5;
+        align-self: center;
+        text-align: justify;
+        width: 90%;
+        font-size: map-get($map: $font-size_mediumGrowth, $key: '11');
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+
+}
+
+.fa-ul {
+    @include flex-column (center, flex-start);
+    margin: 0;
+    label {
+        display: flex;
+    }
+}
+
+.faqs-divider {
+    border-bottom: 2px solid #8eafcb;
+    margin: calc(1rem + 1vw) 0 calc(1rem + 1vw);
+}
+
+.fa-ul>li {
+    position: relative;
+    margin-left: calc(1rem + 2.3vw);
+    transform: translate(-8px, 0);
+}
+
+
+.fa-li {
+    transition: 0.2s ease-out;
+    left: calc(-1.4rem - 1.9vw);
+}
+
+input:checked + li {
+   label {
+        .fa-li {
+            transform: rotate(180deg);
+        } 
+   } 
+}
+
+
+/* guarantee section */
+
+.guarantee {
+    grid-area: guarantee;
+    background-image: url(../img/cardsbackground2.png);
+    background-color: #fdff2054;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.cardsbackground {
+    filter: drop-shadow(2px 4px 6px black);
+    background: linear-gradient(90deg, #bdd1d81c, #34738b17);
+    width: 100%;
+}
+
+.guarantee-card {
+    border-radius: 1.5rem;
+    background: linear-gradient(90deg, #000000b3, #00000094);
+    color: rgb(150, 182, 209);
+
+    h2 {
+        font-size: map-get($map: $font-size_mediumGrowth, $key: '3');
+        color: #96b6d1;
+        font-family: 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+        text-shadow: 0px 4px 2px #396e8361;
+    }
+    
+    p {
+        font-size: map-get($map: $font-size_slowGrowth, $key: '9');
+
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    img {
+        filter: drop-shadow(2px 4px 6px black);
+    }
+}
+
+@media screen and (min-width: $galaxys8) {
+    .fa-ul>li {
+        transform: none;
+    }
+    
+}
+
+@media screen and (min-width: $bootstrap-xl) {
+
+    .fa-ul label {
+        align-items: center;
+    }
+    
+}
+
+
+
+
+
+
