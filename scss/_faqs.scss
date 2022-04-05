@@ -12,8 +12,12 @@
         color: #cadeef;
     }
     .rule {
-        border-bottom: 2px solid #8eafcb;
+        height: 4px;
         width: 50%;
+        line {
+            stroke: #8eafcb;
+            stroke-width: 2px;
+        }
     }
     .fa-chevron-up {
         color: white;
@@ -52,8 +56,12 @@
 }
 
 .faqs-divider {
-    border-bottom: 2px solid #8eafcb;
+    height: 4px;
     margin: calc(1rem + 1vw) 0 calc(1rem + 1vw);
+    line {
+        stroke: #8eafcb;
+        stroke-width: 2px;
+    }
 }
 
 .fa-ul>li {

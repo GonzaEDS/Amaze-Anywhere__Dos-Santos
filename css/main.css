@@ -7975,10 +7975,13 @@ footer {
   font-size: calc(0.5rem + 1vw); }
 
 .divider_1 {
-  border-bottom: 2px solid #287c81fa;
+  height: 2px;
   margin-top: -0.8em;
   width: calc(2.1rem + 5vw);
   margin-bottom: 0.5rem; }
+  .divider_1 line {
+    stroke: #287c81fa;
+    stroke-width: 4px; }
 
 /* pages */
 .header-titles {
@@ -8260,7 +8263,10 @@ header {
 
 /* eye divider */
 .rule {
-  border-bottom: 2px solid #287c81fa; }
+  height: 8px; }
+  .rule line {
+    stroke: #287c81fa;
+    stroke-width: 2px; }
 
 /* BEST-ROUTINES */
 .best-routines-section {
@@ -8338,8 +8344,6 @@ header {
     align-items: center;
     gap: 2em;
     width: 90%; }
-  .rule {
-    border-bottom: 2px solid #287c81fa; }
   .best-routines-section h2, .best-routines-section .h2 {
     line-height: 1.3; } }
 
@@ -8541,8 +8545,11 @@ header {
   .faqs .fa-question-circle {
     color: #cadeef; }
   .faqs .rule {
-    border-bottom: 2px solid #8eafcb;
+    height: 4px;
     width: 50%; }
+    .faqs .rule line {
+      stroke: #8eafcb;
+      stroke-width: 2px; }
   .faqs .fa-chevron-up {
     color: white;
     font-weight: 100;
@@ -8576,8 +8583,11 @@ header {
     display: flex; }
 
 .faqs-divider {
-  border-bottom: 2px solid #8eafcb;
+  height: 4px;
   margin: calc(1rem + 1vw) 0 calc(1rem + 1vw); }
+  .faqs-divider line {
+    stroke: #8eafcb;
+    stroke-width: 2px; }
 
 .fa-ul > li {
   position: relative;
@@ -8653,9 +8663,12 @@ input:checked + li label .fa-li {
     line-height: 1.3; }
 
 .divider_3 {
-  border-bottom: 2px solid #3e7186;
+  height: 6px;
   width: 6em;
   display: flex; }
+  .divider_3 line {
+    stroke: #3e7186;
+    stroke-width: 2px; }
 
 .quotedivider {
   display: flex;
@@ -8664,7 +8677,11 @@ input:checked + li label .fa-li {
   width: 100%;
   gap: 1em; }
   .quotedivider .rule {
+    height: 6px;
     width: 30%; }
+    .quotedivider .rule line {
+      stroke: #287c81fa;
+      stroke-width: 2px; }
 
 .fa-quote-left {
   color: #355f70; }
@@ -8692,12 +8709,14 @@ input:checked + li label .fa-li {
     background-position-y: 95%; } }
 
 @media screen and (min-width: 712px) {
+  .divider_3 line {
+    stroke-width: 3px; }
   .quotedivider {
     gap: 2em; }
-  .divider_3 {
-    border-bottom: 3px solid #3e7186; }
-  .quotedivider .rule {
-    border-bottom: 3px solid #287c81fa; }
+    .quotedivider .rule {
+      height: 6px; }
+      .quotedivider .rule line {
+        stroke-width: 3px; }
   /* reviews section */
   .testimonials-bg {
     background-size: 185%;

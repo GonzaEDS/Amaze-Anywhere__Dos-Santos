@@ -26,9 +26,14 @@
 
 
 .divider_3 {
-    border-bottom: 2px solid rgb(62, 113, 134);
+    // border-bottom: 2px solid rgb(62, 113, 134);
+    height: 6px;
     width: 6em;
     display: flex;
+    line {
+        stroke: rgb(62, 113, 134);
+        stroke-width: 2px;
+    }
 }
 
 
@@ -39,7 +44,12 @@
     gap: 1em;
 
     .rule {
+        height: 6px;
         width: 30%;
+        line {
+            stroke: #287c81fa;
+            stroke-width: 2px;
+        }
     }
 }
 
@@ -77,17 +87,20 @@
 }
 
 @media screen and (min-width: $ipadMini) {
-    .quotedivider {
-        gap: 2em;
-    }
 
     .divider_3 {
-        border-bottom: 3px solid rgb(62, 113, 134);
+        line {
+            stroke-width: 3px;
+        }
     }
 
     .quotedivider {
+        gap: 2em;
         .rule {
-            border-bottom: 3px solid $primary;
+            height: 6px;
+            line {
+                stroke-width: 3px;
+            }
         }
     } 
     

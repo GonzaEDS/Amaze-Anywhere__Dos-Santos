@@ -12,7 +12,11 @@
 
 /* eye divider */
 .rule {
-    border-bottom: 2px solid $primary;
+    height: 8px;
+    line {
+        stroke: $primary;
+        stroke-width: 2px;
+    }
 }
 
 /* BEST-ROUTINES */
@@ -116,10 +120,6 @@
         @include flex (center, center);
         gap: 2em;
         width: 90%;
-    }
-
-    .rule {
-        border-bottom: 2px solid $primary;
     }
 
     .best-routines-section {
