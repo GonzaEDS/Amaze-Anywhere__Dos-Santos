@@ -1,6 +1,6 @@
 {
   "name": "amaze-anywhere_dos-santos-master",
-  "version": "6.0.0",
+  "version": "7.0.0",
   "description": "A landing page for a card magic course.",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GonzaEDS/Amaze-Anywhere_Dos-Santos_7-SEO.git"
+    "url": "git+https://github.com/GonzaEDS/Amaze-Anywhere__Dos-Santos.git"
   },
   "keywords": [
     "sass",
@@ -24,9 +24,9 @@
   "author": "Gonzalo Dos Santos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GonzaEDS/Amaze-Anywhere_Dos-Santos_7-SEO/issues"
+    "url": "https://github.com/GonzaEDS/Amaze-Anywhere__Dos-Santos/issues"
   },
-  "homepage": "https://github.com/GonzaEDS/Amaze-Anywhere_Dos-Santos_7-SEO#readme",
+  "homepage": "https://https://github.com/GonzaEDS/Amaze-Anywhere__Dos-Santos#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
