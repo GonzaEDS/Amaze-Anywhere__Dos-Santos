@@ -117,36 +117,36 @@
     <footer class="d-flex align-items-center justify-content-center">
         <p class="m-1">Copyright © 2022 Amaze Anywhere</p>
     </footer>
-</body>
-<script>
-    /* initialize AOS */
-    AOS.init();
-
-    /* shrinking navbar when scrolling */
-    let prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.querySelector('header').style.top = "0";
-        } else {
-            document.querySelector('header').style.top = "calc(0em - var(--navHeight))";
+    <script>
+        /* initialize AOS */
+        AOS.init();
+    
+        /* shrinking navbar when scrolling */
+        let prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.querySelector('header').style.top = "0";
+            } else {
+                document.querySelector('header').style.top = "calc(0em - var(--navHeight))";
+            }
+            prevScrollpos = currentScrollPos;
         }
-        prevScrollpos = currentScrollPos;
-    }
-
-    /*Start anchor link smooth scroll*/
-    const startLink = document.querySelector('#start-link')
-    startLink.addEventListener("click", scrollToStart);
-    function scrollToStart() {
-      const start = document.getElementById("start");
-      start.scrollIntoView({behavior: "smooth", inline: "nearest"});
-    }
-
-    const startLinkToVideo = document.querySelector('#start-link-to-video')
-    startLinkToVideo.addEventListener("click", scrollToVideo);
-    function scrollToVideo() {
-      const video = document.getElementById("video");
-      video.scrollIntoView({behavior: "smooth", inline: "nearest"});
-    } 
-</script>
+    
+        /*Start anchor link smooth scroll*/
+        const startLink = document.querySelector('#start-link')
+        startLink.addEventListener("click", scrollToStart);
+        function scrollToStart() {
+          const start = document.getElementById("start");
+          start.scrollIntoView({behavior: "smooth", inline: "nearest"});
+        }
+    
+        const startLinkToVideo = document.querySelector('#start-link-to-video')
+        startLinkToVideo.addEventListener("click", scrollToVideo);
+        function scrollToVideo() {
+          const video = document.getElementById("video");
+          video.scrollIntoView({behavior: "smooth", inline: "nearest"});
+        } 
+    </script>
+</body>
 </html>

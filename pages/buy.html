@@ -147,24 +147,23 @@
      <footer class="d-flex align-items-center justify-content-center">
         <p class="m-1">Copyright © 2022 Amaze Anywhere</p>
     </footer>
-</body>
-<script>
-    /* initialize AOS */
-    AOS.init();
-
-    /* shrinking navbar when scrolling */
-    let prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.querySelector('header').style.top = "0";
-        } else {
-            document.querySelector('header').style.top = "calc(0em - var(--navHeight))";
+    <script>
+        /* initialize AOS */
+        AOS.init();
+    
+        /* shrinking navbar when scrolling */
+        let prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.querySelector('header').style.top = "0";
+            } else {
+                document.querySelector('header').style.top = "calc(0em - var(--navHeight))";
+            }
+            prevScrollpos = currentScrollPos;
         }
-        prevScrollpos = currentScrollPos;
-    }
-
-</script>
+    </script>
+</body>
 </html>
 
 
