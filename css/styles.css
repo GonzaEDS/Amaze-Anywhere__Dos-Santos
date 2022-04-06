@@ -1324,7 +1324,7 @@ footer {
 /* banner */
 .pages-background {
   grid-area: banner;
-  background-image: url(../img/pages-banner.png);
+  background-image: url(../img/pages-banner.webp);
   background-size: cover;
   background-position: 76% 100%;
   background-position: calc(73% - 12vw) 100%;
@@ -1378,7 +1378,7 @@ footer {
   .header-titles {
     padding: unset; }
   .pages-background {
-    background-image: url(../img/pages-banner.png);
+    background-image: url(../img/pages-banner.webp);
     background-size: cover;
     background-position: right top;
     filter: drop-shadow(1px 3px 1px black); }
@@ -1572,9 +1572,9 @@ footer {
         .course-goals .goals-cards-container .goals-card .goals-img-container .goals-img-1 {
           background-image: url(../img/alan-400x220.webp); }
         .course-goals .goals-cards-container .goals-card .goals-img-container .goals-img-2 {
-          background-image: url(../img/guadi-400x220.png); }
+          background-image: url(../img/guadi-400x220.webp); }
         .course-goals .goals-cards-container .goals-card .goals-img-container .goals-img-3 {
-          background-image: url(../img/maxi-deck-on-hands.png); }
+          background-image: url(../img/maxi-deck-on-hands.webp); }
         .course-goals .goals-cards-container .goals-card .goals-img-container .goals-img-fx {
           background: linear-gradient(180deg, rgba(252, 252, 252, 0), #f6f8f9);
           position: absolute;
@@ -1740,7 +1740,7 @@ input:checked + li label .fa-li {
 /* guarantee section */
 .guarantee {
   grid-area: guarantee;
-  background-image: url(../img/cardsbackground2.png);
+  background-image: url(../img/cardsbackground2.webp);
   background-color: #fdff2054;
   background-blend-mode: multiply;
   background-size: cover;
