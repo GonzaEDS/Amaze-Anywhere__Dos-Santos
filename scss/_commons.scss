@@ -12,7 +12,17 @@ $titlesFont: 'Old Standard TT',serif;
 $sansSerifFont: 'Lato', sans-serif;
 $font-family-sans-serif: 'Lato', sans-serif;
 
-// Font-size maps
+// media queries
+$galaxys8: 360px;
+$iphone12: 390px;
+$ipadMini: 712px;
+$bootstrap-md: 768px;
+$ipadAir: 820px;
+$bootstrap-lg: 992px;
+$ipadMiniLandscape: 1024px;
+$bootstrap-xl: 1200px;
+
+// font-size maps
 $font-size_slowGrowth: (
 
     '1' : calc(1.3rem + 0.215vw),
@@ -76,16 +86,6 @@ $growth_rates: (
     }
 
 }
-
-// media queries
-$galaxys8: 360px;
-$iphone12: 390px;
-$ipadMini: 712px;
-$bootstrap-md: 768px;
-$ipadAir: 820px;
-$bootstrap-lg: 992px;
-$ipadMiniLandscape: 1024px;
-$bootstrap-xl: 1200px;
 
 
 :root {
