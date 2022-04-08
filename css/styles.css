@@ -899,6 +899,9 @@ summary {
 .mt-4 {
   margin-top: 1.5rem !important; }
 
+.mb-1 {
+  margin-bottom: 0.25rem !important; }
+
 .mb-3 {
   margin-bottom: 1rem !important; }
 
@@ -907,6 +910,9 @@ summary {
 
 .p-0 {
   padding: 0 !important; }
+
+.p-2 {
+  padding: 0.5rem !important; }
 
 .p-3 {
   padding: 1rem !important; }
@@ -1335,10 +1341,22 @@ footer {
 
 .error-page section {
   height: calc(100vh - (1.7rem + 1vw));
-  padding-top: calc(10rem - 4vw); }
+  padding-top: calc(9rem - 4vw); }
 
 .error-page p {
   font-weight: 800; }
+
+.error-page a {
+  border: 3px solid #43b4bc;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in;
+  font-family: "Lato", sans-serif;
+  color: #64cbd2;
+  transition: color 0.3s ease-in; }
+  .error-page a:hover {
+    background-color: #43b4bcd5;
+    color: black;
+    font-weight: 900; }
 
 .grid {
   display: grid;

@@ -359,16 +359,41 @@ footer {
     
 }
 
+// error 404 
+
 .error-page {
     section {
         height: calc(100vh - (1.7rem + 1vw));
-        padding-top: calc(10rem - 4vw);
+        padding-top: calc(9rem - 4vw);
     }
     p {
         font-weight: 800;
     }
 
 }
+
+
+
+.error-page {
+    a {
+        border: 3px solid #43b4bc ;
+        font-weight: 600;
+        transition: background-color 0.3s ease-in;
+        font-family: $sansSerifFont;
+        color: #64cbd2;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+            background-color: #43b4bcd5;
+
+            color: black;
+            font-weight: 900;
+
+        }
+    }
+}
+
+// grids
 
 .grid {
     @include gridSections (4);
@@ -434,3 +459,4 @@ footer {
     }
 
 }
+
